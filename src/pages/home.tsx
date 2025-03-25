@@ -147,7 +147,7 @@ Home.get('/', (c) => {
             <a
               target="_blank"
               class="p-4 sm:p-8 hover:bg-opacity-5 hover:bg-white rounded-lg duration-100 sm:col-span-4"
-              href="https://github.com/sumitkolhe/jiosaavn-api/issues"
+              href="https://t.me/Frozensupport1"
             >
               <div class="flex flex-col">
                 <span class="text-xs uppercase bg-opacity-15 rounded text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-violet-500 text-violet-500">
@@ -170,7 +170,7 @@ Home.get('/', (c) => {
                 <div class="text-neutral-500 mt-2">
                   Have a question or need help? Reach out on{' '}
                   <a
-                    href="https://github.com/sumitkolhe"
+                    href="https://github.com/prashantsahlot"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline text-indigo-500"
@@ -179,7 +179,7 @@ Home.get('/', (c) => {
                   </a>
                   ,{' '}
                   <a
-                    href="https://twitter.com/thesumitkolhe"
+                    href="https://t.me/xyz09723"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline text-sky-500"
@@ -188,7 +188,7 @@ Home.get('/', (c) => {
                   </a>
                   , or{' '}
                   <a
-                    href="https://t.me/sumitkolhe"
+                    href="https://t.me/xyz09723"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline text-pink-500"
