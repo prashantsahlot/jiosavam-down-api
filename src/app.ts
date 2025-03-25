@@ -47,7 +47,7 @@ export class App {
           version: '1.0.0',
           title: 'JioSaavn API',
           description: `# Introduction 
-        \nJioSaavn API, accessible at [saavn.dev](https://saavn.dev), is an unofficial API that allows users to download high-quality songs from [JioSaavn](https://jiosaavn.com). 
+        \nJioSaavn API, accessible at [Frozen](https://jiosaavn-api.lagendplayersyt.workers.dev/), is an unofficial API that allows users to download high-quality songs from [JioSaavn](https://jiosaavn.com). 
         It offers a fast, reliable, and easy-to-use API for developers. \n`
         },
         servers: [{ url: `${protocol}//${hostname}${port ? `:${port}` : ''}`, description: 'Current environment' }]
