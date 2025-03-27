@@ -21,8 +21,8 @@ For a detailed list of changes, see the [CHANGELOG](CHANGELOG.md).
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/sumitkolhe/jiosaavn-api
-   cd jiosaavn-api
+   git clone https://github.com/prashantsahlot/jiosavam-down-api
+   cd jiosavam-down-api
    ```
 
 2. Install the required dependencies:
