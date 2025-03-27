@@ -31,7 +31,7 @@ Home.get('/', (c) => {
       <head>
         <title>JioSaavn API</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://saavn.dev/" />
@@ -41,21 +41,23 @@ Home.get('/', (c) => {
         <meta property="twitter:url" content="https://saavn.dev/" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
+
+        {/* Changed GitHub username from "sumitkolhe" to "Frozen-Bots" */}
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/preview.jpg"
+          content="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/preview.jpg"
         />
         <meta
           property="twitter:image"
-          content="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/preview.jpg"
+          content="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/preview.jpg"
         />
         <link
           rel="icon"
           type="image/x-icon"
-          href="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/favicon.ico"
+          href="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/favicon.ico"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com" />
         <style
@@ -99,9 +101,9 @@ Home.get('/', (c) => {
               />
               <path
                 fill="#ff7d78"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M8.25 12a3.75 3.75 0 1 1 7.5 0a3.75 3.75 0 0 1-7.5 0m11-.5a.75.75 0 0 1 .75.75a2.25 2.25 0 0 0 2.25 2.25a.75.75 0 0 1 0 1.5a3.734 3.734 0 0 1-2.25-.75v5a2.75 2.75 0 1 1-1.5-2.45v-5.55a.75.75 0 0 1 .75-.75m-.75 8.75a1.25 1.25 0 1 0-2.5 0a1.25 1.25 0 0 0 2.5 0"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </svg>
             <p class="text-2xl md:text-4xl text-transparent font-bold leading-none bg-clip-text bg-gradient-to-r from-[#ff7d78] to-purple-600">
@@ -130,17 +132,20 @@ Home.get('/', (c) => {
               </div>
             </a>
 
+            {/* Updated GitHub link to "Frozen-Bots" */}
             <a
               target="_blank"
               class="p-4 sm:p-8 hover:bg-opacity-5 hover:bg-white rounded-lg duration-100 sm:col-span-4"
-              href="https://github.com/sumitkolhe/jiosaavn-api"
+              href="https://github.com/Frozen-Bots/jiosaavn-api"
             >
               <div class="flex flex-col">
                 <span class="text-xs uppercase bg-opacity-15 rounded text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-green-500 text-green-500">
                   Open Source
                 </span>
                 <span class="text-neutral-200 font-bold text-lg sm:text-xl md:text-2xl mt-2">Open Source</span>
-                <div class="text-neutral-500 mt-2">Saavn API is open-source. Check out the source code on github.</div>
+                <div class="text-neutral-500 mt-2">
+                  Saavn API is open-source. Check out the source code on GitHub.
+                </div>
               </div>
             </a>
 
@@ -161,12 +166,13 @@ Home.get('/', (c) => {
               </div>
             </a>
 
+            {/* Changed "Sumit Kolhe" to "Frozen Bots" */}
             <div class="p-4 sm:p-8 hover:bg-opacity-5 hover:bg-white rounded-lg duration-100 sm:col-span-4">
               <div class="flex flex-col">
                 <span class="text-xs uppercase bg-opacity-15 rounded text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-blue-500 text-blue-500">
                   Contact
                 </span>
-                <span class="text-neutral-200 font-bold text-lg sm:text-xl md:text-2xl mt-2">Sumit Kolhe</span>
+                <span class="text-neutral-200 font-bold text-lg sm:text-xl md:text-2xl mt-2">Frozen Bots</span>
                 <div class="text-neutral-500 mt-2">
                   Have a question or need help? Reach out on{' '}
                   <a
@@ -193,8 +199,9 @@ Home.get('/', (c) => {
                     rel="noopener noreferrer"
                     className="hover:underline text-pink-500"
                   >
-                    Telegram.
+                    Telegram
                   </a>
+                  .
                 </div>
               </div>
             </div>
@@ -204,3 +211,4 @@ Home.get('/', (c) => {
     </html>
   )
 })
+
