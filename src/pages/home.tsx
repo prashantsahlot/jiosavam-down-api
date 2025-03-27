@@ -45,16 +45,16 @@ Home.get('/', (c) => {
         {/* Changed GitHub username from "sumitkolhe" to "Frozen-Bots" */}
         <meta
           property="og:image"
-          content="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/preview.jpg"
+          content="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/preview.jpg"
         />
         <meta
           property="twitter:image"
-          content="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/preview.jpg"
+          content="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/preview.jpg"
         />
         <link
           rel="icon"
           type="image/x-icon"
-          href="https://raw.githubusercontent.com/Frozen-Bots/jiosaavn-api/main/assets/favicon.ico"
+          href="https://raw.githubusercontent.com/sumitkolhe/jiosaavn-api/main/assets/favicon.ico"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -136,7 +136,7 @@ Home.get('/', (c) => {
             <a
               target="_blank"
               class="p-4 sm:p-8 hover:bg-opacity-5 hover:bg-white rounded-lg duration-100 sm:col-span-4"
-              href="https://github.com/Frozen-Bots/jiosaavn-api"
+              href="https://github.com/sumitkolhe/jiosaavn-api"
             >
               <div class="flex flex-col">
                 <span class="text-xs uppercase bg-opacity-15 rounded text-center max-w-fit px-2 py-1 font-bold tracking-wide bg-green-500 text-green-500">
