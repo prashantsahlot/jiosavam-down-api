@@ -20,8 +20,10 @@ export class GetSongSuggestionsUseCase implements IUseCase<GetSongSuggestionsArg
   }
 
   async execute({ songId, limit }: GetSongSuggestionsArgs) {
+    // 1) get or create a station
     const stationId = await this.createSongStation.execute(songId)
 
+    // 2) fetch suggestions from the API
     const { data, ok } = await useFetch<z.infer<typeof SongSuggestionAPIResponseModel>>({
       endpoint: Endpoints.songs.suggestions,
       params: {
@@ -35,13 +37,21 @@ export class GetSongSuggestionsUseCase implements IUseCase<GetSongSuggestionsArg
       throw new HTTPException(404, { message: `no suggestions found for the given song` })
     }
 
-    const { stationid, ...suggestions } = data
+    // 3) normalize response into an array of items
+    const rawSuggestions: any[] = Array.isArray((data as any).suggestions)
+      ? (data as any).suggestions
+      : Object.entries(data)
+          .filter(([key]) => key !== 'stationid')
+          .map(([, val]) => val)
 
-    return (
-      Object.values(suggestions)
-        .map((element) => element && createSongPayload(element.song))
-        .filter(Boolean)
-        .slice(0, limit) || []
-    )
+    // 4) extract the actual song object (some APIs wrap it under `.song`)
+    const songs = rawSuggestions
+      .map(item => ((item as any).song ?? item) as any)
+      .filter(songObj => songObj && typeof songObj.id === 'string')
+      .slice(0, limit)
+      .map(songObj => createSongPayload(songObj))
+
+    return songs
   }
 }
+
